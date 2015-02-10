@@ -1,0 +1,17 @@
+Brett Carter
+brett.carter@wsu.edu
+with: David Parrott, Taylor Hancuff, Choong Huh
+
+CS455 - Embeded Systems
+
+Description:
+	This project was to create an elevator using four step motors attached to a pulley system. Two motors were to be controlled by a master board and the other two by a slave board. The motors are turned by a sequence of ones an zeroes which determine step size, speed and direction. We used a few direct lines between the master and slave to allow for acknowledgements and "ready" signals in order to keep the four motors in sync, as to not tip the elevator floor. There were to be three modes implemented. each mode corresponded to a different button press on the master board. 
+Mode 1 was to move between floors 1, 2 and 3 constantly for two minutes.
+Mode 2 was to move to the bottom floor from whatever position it was in, then rise to the sencond and third floors, stopping on each briefly then back down to floor one.
+Mode 3 was to simulate an actual elevator by once entering this mode changing the buttons one and two to act as down and up floor buttons and button three became an "exit mode" button.
+
+files:
+	Elevator.c            //to be ran on the master board.
+	elevator_slave.c      //to be ran on the slave board.
+	README
+	466-presentation.pdf  //this is a pdf of the final project checkup 1 week before presentation of the elevator.v
